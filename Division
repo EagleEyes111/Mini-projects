@@ -1,0 +1,14 @@
+print('Hit enter to continue or type "no" to stop', end='')
+while input() != 'no':
+  try:
+    a = input()
+    b = input()
+    division = float(a) // float(b)
+    remainder = float(a) % float(b)
+    dec = remainder / float(b)
+    print('Whole Number of divisions = ' + str(float(division)))
+    print('Remainder = ' + str(float(remainder)))
+    print('Division Value = ' + str(float(division + dec)))
+    print('Type "no" if done or enter to continue')
+  except:
+    break
